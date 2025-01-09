@@ -1,0 +1,193 @@
+$primary-color: #00425a;
+$secondary-color: #2b6292;
+
+.main {
+ display: flex;
+ height: 100vh;
+  margin-left: 0px;
+ justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px), (min-width:768px) {
+    // display: flex;
+    // flex-direction:row;
+  
+    justify-content: space-between; /* Adjust spacing for tablet */
+  }
+
+  @media (max-width: 768px) {
+   // justify-content: center; /* Center content on smaller screens */
+   // align-items: flex-start; 
+    width: 100%;/* Align items at the start */
+  }
+
+  .content {
+   // max-width: 50%;
+   display: flex;
+   flex-direction: column;
+    margin-left: 130px;
+
+    // @media (max-width: 1024px) {
+     
+    //   position: relative;
+    //   width: 100%; /* Full width on tablet */
+    //   flex-grow: 2; /* Allow content to grow */
+    //   margin-left: 0px;
+    //   margin-right: 0px; /* Remove margin */
+    //   padding: 1rem; /* Full width for mobile */
+    // }
+
+    @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+      position: relative;
+      width: 100%; /* Full width */
+      flex-grow: 2; /* Allow content to grow */
+      margin-left: 0px;
+      margin-right: 0px; /* Remove margin */
+      padding: 1rem; /* Full width for mobile */
+    }
+
+    h1 {
+      font-size: 7rem;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      color: $primary-color;
+
+      @media (max-width: 768px) {
+        font-size: 4rem; width: 100%;
+        /* Adjust font size for smaller screens */
+      }
+    }
+
+    h2 {
+      position: relative;
+      bottom: 33px;
+      color: #0c4160;
+      left: 6px;
+
+      @media (max-width: 768px) {
+        bottom: 19px; /* Adjust positioning for mobile */
+        left: 6px;
+      }
+    }
+
+    p {
+      position: relative;
+      font-size: medium;
+      bottom: 10px;
+      text-align: justify;
+      margin-left: 6px;
+      margin-bottom: 10px;
+      color: #1f2020;
+      max-width: 500px;
+
+      @media screen and (max-width: 768px) {
+        text-align: justify;
+        width: 100%; /* Full width text for mobile */
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Full width for buttons */
+      }
+
+      .purchaseBtn,
+      .demoBtn {
+        font-weight: bolder;
+        padding: 1rem 1.5rem;
+        border: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          width: 100%; /* Full width buttons for mobile */
+          padding: 4px;
+          height: 50px;
+        }
+      }
+
+      .purchaseBtn {
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 35px;
+      }
+
+      .demoBtn {
+        background-color: #fff;
+        color: $primary-color;
+      }
+
+
+.playIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-right: 8px;
+  border:1px solid blueviolet;
+  border-radius: 20px;
+ 
+;
+    /* Adds space between the icon and text */
+}
+
+.demoBtnDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playIcon, .demoBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-right: 60px;
+    top: 10px;
+    right: 250px;
+    width: 24%;
+    height: 600px;
+
+    @media screen and  (max-width : 1024px) {
+      display: flex;
+      right:  30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      width: 250px;
+       /* Take full width on mobile */
+       height:500px;
+       
+       margin-left: 95px;
+      //display: block;
+       /* Auto height for image */
+      padding-right: 0;
+      right: 0;
+      top: 0;
+      order: -1; /* Move this element to the top */
+      margin-bottom: 1rem;
+      //border: 1px solid black; 
+
+     
+    }
+  }
+}
