@@ -1,6 +1,5 @@
 .main {
   display: flex;
-  height: 100vh;
   margin-left: 0px;
   justify-content: space-evenly;
   align-items: center;
@@ -20,7 +19,7 @@
 .main .content {
   display: flex;
   flex-direction: column;
-  margin-left: 130px;
+  margin-left: 125px;
 }
 @media (max-width: 768px) {
   .main .content {
@@ -56,8 +55,10 @@
 }
 @media (max-width: 768px) {
   .main .content h2 {
-    bottom: 19px; /* Adjust positioning for mobile */
-    left: 6px;
+    bottom: 19px;
+    /* Adjust positioning for mobile */
+    margin-right: 100px;
+    font-size: 16px;
   }
 }
 .main .content p {
@@ -137,8 +138,8 @@
   position: relative;
   padding-right: 60px;
   top: 10px;
-  right: 250px;
-  width: 24%;
+  right: 280px;
+  width: 21%;
   height: 600px;
 }
 @media screen and (max-width: 1024px) {
@@ -151,10 +152,9 @@
   .main .imageContainer {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 220px;
     /* Take full width on mobile */
-    height: 500px;
-    margin-left: 95px;
+    height: 450px;
     /* Auto height for image */
     padding-right: 0;
     right: 0;

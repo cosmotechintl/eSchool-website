@@ -14,7 +14,7 @@ export default function Home() {
           <p>
             eSchool is an advanced School Management System designed to simplify
             and streamline the administrative, academic, and communication
-            processes within educational institutions.Whether you're managing a
+            processes within educational institutions.Whether you&apos;re managing a
             small school or a large academic institution, eSchool offers a
             comprehensive suite of tools to enhance efficiency and improve
             overall school management.
