@@ -1,5 +1,6 @@
 .introductionPart {
   display: flex;
+  overflow: hidden;
   align-items: center;
   padding: 40px;
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */

@@ -1,7 +1,7 @@
 .container {
   overflow: hidden;
   min-width: 100%;
-  width: 100vw;
+  padding-top: 0px;
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -40,13 +40,13 @@
 .container h2 div {
   position: relative;
   left: 12px;
-  bottom: 10px;
+  bottom: 7px;
 }
 .container h2::after {
   content: "";
   position: absolute;
   left: 10px;
-  bottom: -1px;
+  bottom: 0px;
   width: 28%;
   border-radius: 5px;
   height: 3px;
@@ -55,8 +55,13 @@
 @media (max-width: 768px) {
   .container {
     position: relative;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: visible;
-    bottom: 160px;
+    top: 70px;
   }
 }
 .container h2 {
@@ -65,10 +70,13 @@
   font-weight: bold;
   margin-bottom: 2rem;
 }
+@media (max-width: 768px) {
+  .container h2 {
+    position: relative;
+  }
+}
 .container .grid {
   overflow: visible;
-  padding-top: 50px;
-  margin-left: 30px;
   max-width: 550px;
   max-height: 350px;
   position: relative;
@@ -77,13 +85,22 @@
 @media (max-width: 768px) {
   .container .grid {
     position: relative;
+    padding: 20px;
+    justify-content: center;
+    bottom: 50px;
   }
 }
 .container .grid .firstseconditem {
   display: flex;
+  position: relative;
+  right: 12px;
+  text-align: justify;
 }
 .container .grid .firstseconditem p {
   font-size: 13px;
+}
+.container .grid .firstseconditem .width1 {
+  min-width: 210px;
 }
 @media (max-width: 768px) {
   .container .grid .firstseconditem {
@@ -92,31 +109,51 @@
     bottom: 40px;
     flex-direction: column;
   }
+  .container .grid .firstseconditem p {
+    padding: 10px;
+  }
 }
 .container .grid .thirdfourthitem {
   display: flex;
-  margin-right: 25px;
+  text-align: justify;
   margin-top: 50px;
+  padding-left: 12px;
+  padding-right: 15px;
+  position: relative;
 }
 .container .grid .thirdfourthitem .circle {
-  margin-left: 10px;
+  margin-left: -5px;
+}
+.container .grid .thirdfourthitem .width03 {
+  padding-right: 10px;
+  padding-left: 0px;
+  display: flex;
+  right: 10px;
+  margin-right: 12px;
 }
 @media (max-width: 768px) {
   .container .grid .thirdfourthitem {
     display: flex;
-    bottom: 75px;
+    padding: 0;
+    bottom: 90px;
+    left: 10px;
     flex-direction: column;
     position: relative;
+  }
+  .container .grid .thirdfourthitem .width04 {
+    position: relative;
+    right: 25px;
+    padding-left: 15px;
   }
 }
 .container .circle {
   background-color: #243a5e;
   color: white;
-  margin: 10px;
+  margin: 15px;
   border-radius: 50%;
-  width: 3rem;
+  width: 2.8rem;
   padding: 10px;
-  height: 2.2rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,8 +161,15 @@
   font-weight: bold;
 }
 .container p {
-  margin-left: 1rem;
   font-size: 13px;
+  color: #1f2020;
+}
+@media (max-width: 768px) {
+  .container p {
+    position: relative;
+    align-items: center;
+    text-align: justify;
+  }
 }
 .container .image-section {
   position: relative;

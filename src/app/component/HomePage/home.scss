@@ -3,6 +3,7 @@ $secondary-color: #2b6292;
 
 .main {
  display: flex;
+ overflow: hidden;
  //height: 100vh;
   margin-left: 0px;
  justify-content: space-evenly;
@@ -135,7 +136,7 @@ $secondary-color: #2b6292;
   align-items: center;
   padding: 5px;
   margin-right: 8px;
-  border:1px solid blueviolet;
+  border:1px solid $primary-color;
   border-radius: 20px;
  
 ;
@@ -150,6 +151,7 @@ $secondary-color: #2b6292;
 
 .playIcon, .demoBtn {
   display: inline-flex;
+  
   align-items: center;
   justify-content: center;
   padding: 5px;
