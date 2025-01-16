@@ -30,12 +30,12 @@ const Contact = () => {
         </div>
         <div className="info-item">
           <FaMapMarkerAlt size={30}/>
-          <span>Subidhanagar, Tinkune, Kathmandu, Bagmati, Nepal</span>
+          <span>Subidhanagar, Tinkune, Kathmandu</span>
         </div>
       </div>
 
       <div className="mobile-preview">
-        <Image src="/assets/contactus.png" alt="Mobile Preview 1" layout="fill" width={0} height={0} />
+        <Image src="/assets/contactus (2).png" alt="Mobile Preview 1" layout="fill" width={0} height={0} />
         
       </div>
     </div>

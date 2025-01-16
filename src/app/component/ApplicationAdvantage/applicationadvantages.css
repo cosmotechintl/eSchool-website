@@ -106,7 +106,9 @@
   .container .grid .firstseconditem {
     display: flex;
     position: relative;
-    bottom: 40px;
+    bottom: 50px;
+    left: 8px;
+    padding-right: 25px;
     flex-direction: column;
   }
   .container .grid .firstseconditem p {
@@ -134,9 +136,8 @@
 @media (max-width: 768px) {
   .container .grid .thirdfourthitem {
     display: flex;
-    padding: 0;
-    bottom: 90px;
-    left: 10px;
+    bottom: 100px;
+    left: 18px;
     flex-direction: column;
     position: relative;
   }
@@ -153,7 +154,7 @@
   border-radius: 50%;
   width: 2.8rem;
   padding: 10px;
-  height: 2.5rem;
+  height: 2.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
