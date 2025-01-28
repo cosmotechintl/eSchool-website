@@ -1,0 +1,70 @@
+/* Wrapper for the entire content */
+.wrapper {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+ // min-height: 100vh; /* Ensures full-page height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+  @media(max-width:768px){
+    position: relative;
+    
+
+   // height : 20vh;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%; /* Width of the semi-circle */
+    height: 90%; /* Height of the semi-circle */
+    background-color: #00425a; /* Semi-circle color */
+    border-radius: 50%; /* Creates the circular shape */
+    bottom: -48%; /* Position the semi-circle at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    z-index: -1; /* Push it behind any content */
+  }/* Pushes footer to the bottom */
+}
+
+/* Thank You container */
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 50vh;
+  background-color: #ffffff;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  position: relative;
+  top: 25px;
+  font-weight: bold;
+  color: #00425a;
+  margin: 0;
+}
+
+/* Image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 20px;
+    //border-radius: 10px; /* Optional styling */
+    //box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+}
+
+/* Footer with semi-circle background */
+
